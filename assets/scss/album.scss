@@ -1,0 +1,34 @@
+@import "common/variables";
+@import "common/mixin";
+
+.p-album {
+    padding: rem(20px) 0;
+    @include mq("md", min) {
+        padding: rem(50px) 0;
+    }
+    &__detail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(10px);
+
+        @include mq("md", min) {
+            grid-template-columns: repeat(5, 1fr);
+            gap: rem(20px);
+        }
+    }
+
+    .album-item {
+        display: block;
+        height: rem(100px);
+
+        @include mq("md", min) {
+            height: rem(200px);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

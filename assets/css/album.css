@@ -1,0 +1,34 @@
+.p-album {
+  padding: 2rem 0;
+}
+@media (min-width: 767px) {
+  .p-album {
+    padding: 5rem 0;
+  }
+}
+.p-album__detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 767px) {
+  .p-album__detail {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+}
+.p-album .album-item {
+  display: block;
+  height: 10rem;
+}
+@media (min-width: 767px) {
+  .p-album .album-item {
+    height: 20rem;
+  }
+}
+.p-album .album-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=album.css.map */
